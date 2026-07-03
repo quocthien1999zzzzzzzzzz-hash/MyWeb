@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyJS — Mini Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── MENU ĐIỀU HƯỚNG ── -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">⚡ MyJS</div>
+      <ul class="nav-links">
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#skills">Kỹ năng</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── PHẦN GIỚI THIỆU ── -->
+    <section id="about" class="section hero">
+      <h1>Xin chào, tôi đang học <span class="highlight">JavaScript</span>!</h1>
+      <p>Website này là bài tổng hợp sau 6 buổi học JS cơ bản.</p>
+      <button id="btnToggle" class="btn-primary">Ẩn / Hiện thông tin</button>
+
+      <div id="extraInfo" class="extra-info">
+        <p>📌 Đã học: biến, điều kiện, vòng lặp, DOM, sự kiện.</p>
+        <p>🎯 Mục tiêu: nắm vững JS nền tảng để học framework.</p>
+        <p>💡 Phương châm: <em>Học bằng cách làm!</em></p>
+      </div>
+    </section>
+
+    <!-- ── PHẦN KỸ NĂNG ── -->
+    <section id="skills" class="section">
+      <h2>Kỹ năng đã học</h2>
+      <div class="skills-grid">
+        <div class="skill-card">📝 HTML cấu trúc</div>
+        <div class="skill-card">🎨 CSS giao diện</div>
+        <div class="skill-card">⚡ JS biến & toán tử</div>
+        <div class="skill-card">🔀 Rẽ nhánh & vòng lặp</div>
+        <div class="skill-card">🌐 DOM thao tác</div>
+        <div class="skill-card">🖱️ Xử lý sự kiện</div>
+      </div>
+    </section>
+
+    <!-- ── FORM LIÊN HỆ ── -->
+    <section id="contact" class="section">
+      <h2>Liên hệ</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Họ tên <span class="req">*</span></label>
+          <input type="text" id="name" placeholder="Nguyễn Văn A" />
+          <span class="error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" placeholder="example@email.com" />
+          <span class="error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Tin nhắn <span class="req">*</span></label>
+          <textarea id="message" rows="4" placeholder="Nội dung..."></textarea>
+          <span class="error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn-primary">Gửi tin nhắn</button>
+        <p id="successMsg" class="success hidden">✅ Gửi thành công! Cảm ơn bạn.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 MyJS Project · Học JavaScript cơ bản</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
