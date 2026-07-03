@@ -1,84 +1,112 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MyJS — Mini Project</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đà Lạt Ơi - Hành trình khám phá thành phố ngàn hoa</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="site-header" id="top">
+  <div class="brand">Đà Lạt Ơi</div>
+  <nav class="main-nav" aria-label="Điều hướng chính">
+    <a href="#hero">Trang chủ</a>
+    <a href="#about">Giới thiệu</a>
+    <a href="#gallery">Thư viện</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+</header>
 
-  <!-- ── MENU ĐIỀU HƯỚNG ── -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">⚡ MyJS</div>
-      <ul class="nav-links">
-        <li><a href="#about">Giới thiệu</a></li>
-        <li><a href="#skills">Kỹ năng</a></li>
-        <li><a href="#contact">Liên hệ</a></li>
-      </ul>
-      <button class="menu-toggle" id="menuToggle">☰</button>
-    </nav>
-  </header>
+<main>
+  <section class="hero" id="hero">
+    <p class="eyebrow">Sổ tay du lịch thành phố ngàn hoa</p>
+    <h1 id="main-title">Đà Lạt - Xứ sở mộng mơ giữa cao nguyên</h1>
+    <p class="intro">Nơi những đồi thông xanh mướt, sương sớm bảng lảng và muôn sắc hoa hòa quyện, tạo nên một Đà Lạt dịu dàng mà ai đến cũng muốn quay lại.</p>
+    <a class="primary-button" href="#about">Khám phá Đà Lạt</a>
+  </section>
 
-  <main>
+  <section class="section about-section" id="about">
+    <h2>Giới thiệu về Đà Lạt</h2>
+    <p>Đà Lạt là thành phố cao nguyên thuộc tỉnh Lâm Đồng, nổi tiếng với khí hậu mát mẻ quanh năm, những rừng thông bạt ngàn và kiến trúc Pháp cổ kính còn lưu giữ đến hôm nay.</p>
+    <p>Trang này dành cho những ai yêu thích xê dịch, muốn tìm một nơi để chậm lại, hít thở không khí trong lành và ngắm nhìn thành phố sương mù từ những góc nhìn thân thương nhất.</p>
+    <ul class="topic-list">
+      <li>Khí hậu se lạnh, dễ chịu quanh năm, đặc biệt đẹp vào mùa hoa dã quỳ và mai anh đào.</li>
+      <li>Kiến trúc Pháp cổ xen lẫn những con dốc quanh co đầy chất thơ.</li>
+      <li>Ẩm thực đường phố phong phú: bánh tráng nướng, sữa đậu nành nóng, lẩu gà lá é.</li>
+    </ul>
+  </section>
 
-    <!-- ── PHẦN GIỚI THIỆU ── -->
-    <section id="about" class="section hero">
-      <h1>Xin chào, tôi đang học <span class="highlight">JavaScript</span>!</h1>
-      <p>Website này là bài tổng hợp sau 6 buổi học JS cơ bản.</p>
-      <button id="btnToggle" class="btn-primary">Ẩn / Hiện thông tin</button>
+  <section class="section style-guide" id="style-guide">
+    <h2>Bảng phong cách</h2>
+    <div class="swatches">
+      <div class="swatch swatch-primary">Xanh thông</div>
+      <div class="swatch swatch-accent">Cam dã quỳ</div>
+      <div class="swatch swatch-soft">Sương sớm</div>
+    </div>
+  </section>
 
-      <div id="extraInfo" class="extra-info">
-        <p>📌 Đã học: biến, điều kiện, vòng lặp, DOM, sự kiện.</p>
-        <p>🎯 Mục tiêu: nắm vững JS nền tảng để học framework.</p>
-        <p>💡 Phương châm: <em>Học bằng cách làm!</em></p>
-      </div>
-    </section>
+  <section class="section story-section" id="story">
+    <h2>Câu chuyện Đà Lạt</h2>
+    <p class="lead">Mỗi con dốc, mỗi đồi thông ở Đà Lạt đều mang một câu chuyện riêng, chờ những đôi chân lữ khách ghé qua để lắng nghe.</p>
+    <blockquote>Đà Lạt không vội vàng, chỉ có sương giăng và những buổi sớm mai bình yên.</blockquote>
+  </section>
 
-    <!-- ── PHẦN KỸ NĂNG ── -->
-    <section id="skills" class="section">
-      <h2>Kỹ năng đã học</h2>
-      <div class="skills-grid">
-        <div class="skill-card">📝 HTML cấu trúc</div>
-        <div class="skill-card">🎨 CSS giao diện</div>
-        <div class="skill-card">⚡ JS biến & toán tử</div>
-        <div class="skill-card">🔀 Rẽ nhánh & vòng lặp</div>
-        <div class="skill-card">🌐 DOM thao tác</div>
-        <div class="skill-card">🖱️ Xử lý sự kiện</div>
-      </div>
-    </section>
+  <section class="section feature-section" id="features">
+    <h2>Trải nghiệm nổi bật</h2>
+    <div class="card-row">
+      <article class="feature-card"><h3>Săn mây</h3><p>Dậy sớm lên đồi chè Cầu Đất hoặc đỉnh Langbiang để đón bình minh giữa biển mây bồng bềnh.</p></article>
+      <article class="feature-card"><h3>Dạo hồ Xuân Hương</h3><p>Đi bộ hoặc đạp xe quanh hồ, ghé Thủy Tạ nhâm nhi ly cà phê nóng giữa sương chiều.</p></article>
+      <article class="feature-card"><h3>Chợ đêm Đà Lạt</h3><p>Thưởng thức bánh tráng nướng, sữa đậu nành và không khí nhộn nhịp về đêm.</p></article>
+    </div>
+  </section>
 
-    <!-- ── FORM LIÊN HỆ ── -->
-    <section id="contact" class="section">
-      <h2>Liên hệ</h2>
-      <form id="contactForm" novalidate>
-        <div class="form-group">
-          <label for="name">Họ tên <span class="req">*</span></label>
-          <input type="text" id="name" placeholder="Nguyễn Văn A" />
-          <span class="error" id="nameError"></span>
-        </div>
-        <div class="form-group">
-          <label for="email">Email <span class="req">*</span></label>
-          <input type="email" id="email" placeholder="example@email.com" />
-          <span class="error" id="emailError"></span>
-        </div>
-        <div class="form-group">
-          <label for="message">Tin nhắn <span class="req">*</span></label>
-          <textarea id="message" rows="4" placeholder="Nội dung..."></textarea>
-          <span class="error" id="messageError"></span>
-        </div>
-        <button type="submit" class="btn-primary">Gửi tin nhắn</button>
-        <p id="successMsg" class="success hidden">✅ Gửi thành công! Cảm ơn bạn.</p>
-      </form>
-    </section>
+  <section class="section gallery-section" id="gallery">
+    <h2>Thư viện ảnh Đà Lạt</h2>
+    <div class="image-strip">
+      <figure><img src="img/ho-xuan-huong.jpg" alt="Hồ Xuân Hương Đà Lạt về đêm"><figcaption>Hồ Xuân Hương</figcaption></figure>
+      <figure><img src="img/nha-tho-con-ga.jpg" alt="Nhà thờ Con Gà Đà Lạt"><figcaption>Nhà thờ Con Gà</figcaption></figure>
+      <figure><img src="img/thung-lung-tinh-yeu.jpg" alt="Thung lũng Tình Yêu Đà Lạt"><figcaption>Thung lũng Tình Yêu</figcaption></figure>
+      <figure><img src="img/quang-truong-lam-vien.jpg" alt="Quảng trường Lâm Viên Đà Lạt"><figcaption>Quảng trường Lâm Viên</figcaption></figure>
+      <figure><img src="img/ga-da-lat.jpg" alt="Ga Đà Lạt cổ kính"><figcaption>Ga Đà Lạt</figcaption></figure>
+    </div>
+  </section>
 
-  </main>
+  <section class="section layout-section" id="layout">
+    <h2>Lịch trình gợi ý</h2>
+    <div class="content-layout">
+      <article class="main-content"><h3>Ngày 1: Trung tâm thành phố</h3><p>Hồ Xuân Hương, Nhà thờ Con Gà, chợ Đà Lạt, quảng trường Lâm Viên và thưởng thức ẩm thực chợ đêm.</p></article>
+      <aside class="side-panel"><h3>Mẹo nhỏ</h3><p>Mang theo áo khoác mỏng vì buổi tối Đà Lạt khá lạnh, kể cả mùa hè.</p></aside>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 MyJS Project · Học JavaScript cơ bản</p>
-  </footer>
+  <section class="section portfolio-section" id="portfolio">
+    <h2>Những điểm đến không thể bỏ lỡ</h2>
+    <div class="portfolio-grid">
+      <article>Hồ Xuân Hương</article>
+      <article>Thung lũng Tình Yêu</article>
+      <article>Đồi chè Cầu Đất</article>
+      <article>Thác Datanla</article>
+      <article>Ga Đà Lạt</article>
+      <article>Đỉnh Langbiang</article>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="section contact-section" id="contact">
+    <h2>Liên hệ đặt lịch trình</h2>
+    <form class="contact-form" action="#" method="post">
+      <label for="fullName">Họ tên</label>
+      <input id="fullName" name="fullName" type="text" placeholder="Nhập họ tên">
+      <label for="message">Thông điệp</label>
+      <textarea id="message" name="message" rows="4" placeholder="Bạn muốn hỏi gì về chuyến đi Đà Lạt?"></textarea>
+      <button type="submit">Gửi thông tin</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Đà Lạt Ơi. Trang du lịch cá nhân về thành phố ngàn hoa.</p>
+</footer>
+
+<script src="js/script.js" defer></script>
 </body>
 </html>
